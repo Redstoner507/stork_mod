@@ -1,3 +1,6 @@
 {
-  "item.storkmod.stork_catcher": "Stork Catcher"
+  "item.storkmod.stork_catcher": "Stork Catcher",
+  "item.storkmod.stork_feather": "Stork Feather",
+
+  "block.storkmod.stork_nest_block": "Stork Nest Block"
 }

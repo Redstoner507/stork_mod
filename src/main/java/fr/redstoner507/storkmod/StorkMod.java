@@ -1,6 +1,7 @@
 package fr.redstoner507.storkmod;
 
 import com.mojang.logging.LogUtils;
+import fr.redstoner507.storkmod.block.ModBlocks;
 import fr.redstoner507.storkmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -34,6 +35,7 @@ public class StorkMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
 
         // Register the item to a creative tab
@@ -51,6 +53,13 @@ public class StorkMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.STORK_CATCHER);
+        }
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.STORK_FEATHER);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.STORK_NEST_BLOCK);
         }
     }
 

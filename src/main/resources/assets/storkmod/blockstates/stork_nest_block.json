@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "storkmod:block/stork_nest_block"
+    }
+  }
+}

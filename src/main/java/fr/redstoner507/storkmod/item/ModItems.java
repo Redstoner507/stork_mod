@@ -11,8 +11,11 @@ public class ModItems {
      public static final DeferredRegister<Item> ITEMS =
              DeferredRegister.create(ForgeRegistries.ITEMS, StorkMod.MOD_ID);
 
-    public  static final RegistryObject<Item> STORK_CATCHER = ITEMS.register("stork_catcher",
-            () -> new Item(new Item.Properties().setId(ITEMS.key("stork_catcher"))));
+    public static final RegistryObject<Item> STORK_CATCHER = ITEMS.register("stork_catcher",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> STORK_FEATHER = ITEMS.register("stork_feather",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
