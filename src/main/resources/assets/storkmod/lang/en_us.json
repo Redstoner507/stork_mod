@@ -1,6 +1,9 @@
 {
   "item.storkmod.stork_catcher": "Stork Catcher",
   "item.storkmod.stork_feather": "Stork Feather",
+  "item.storkmod.stork_egg": "Stork Egg",
 
-  "block.storkmod.stork_nest_block": "Stork Nest Block"
+  "block.storkmod.stork_nest_block": "Stork Nest Block",
+
+  "creativetab.storkmod.stork_mod": "Stork Mod"
 }

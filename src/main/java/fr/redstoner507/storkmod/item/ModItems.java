@@ -17,6 +17,9 @@ public class ModItems {
     public static final RegistryObject<Item> STORK_FEATHER = ITEMS.register("stork_feather",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> STORK_EGG = ITEMS.register("stork_egg",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

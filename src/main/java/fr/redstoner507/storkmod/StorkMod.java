@@ -2,6 +2,7 @@ package fr.redstoner507.storkmod;
 
 import com.mojang.logging.LogUtils;
 import fr.redstoner507.storkmod.block.ModBlocks;
+import fr.redstoner507.storkmod.item.ModCreativeModeTabs;
 import fr.redstoner507.storkmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -35,6 +36,8 @@ public class StorkMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
 
@@ -51,6 +54,7 @@ public class StorkMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        /*
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.STORK_CATCHER);
         }
@@ -61,6 +65,7 @@ public class StorkMod {
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.STORK_NEST_BLOCK);
         }
+        */
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
