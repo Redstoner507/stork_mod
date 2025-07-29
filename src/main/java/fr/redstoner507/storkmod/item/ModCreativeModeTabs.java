@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STORK_FEATHER.get());
                         output.accept(ModItems.STORK_EGG.get());
                         output.accept(ModBlocks.STORK_NEST_BLOCK.get());
+                        output.accept(ModItems.CHISEL.get());
                     })
                     .build());
 
