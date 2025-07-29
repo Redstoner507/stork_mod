@@ -22,7 +22,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.5f)
                     .requiresCorrectToolForDrops()
-                    .sound(SoundType.GRASS)));
+                    .sound(SoundType.GRASS)
+                    .noOcclusion()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name,block);

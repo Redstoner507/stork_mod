@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import fr.redstoner507.storkmod.block.ModBlocks;
 import fr.redstoner507.storkmod.item.ModCreativeModeTabs;
 import fr.redstoner507.storkmod.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
